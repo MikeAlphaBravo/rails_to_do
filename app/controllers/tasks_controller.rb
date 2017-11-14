@@ -22,6 +22,7 @@ class TasksController < ApplicationController
     if @task.update(task_params)
       redirect_to list_path(@task.list)
     else
+      render :edit
     end
   end
   def destroy

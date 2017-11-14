@@ -18,7 +18,7 @@ describe "the edit a task process" do
     click_on 'Edit'
     fill_in 'Description', :with => ''
     click_button 'Update Task'
-    # expect(page).to have_content ''
+    expect(page).to have_content 'Please fix these errors:'
   end
   # NO BUILT IN ERROR
 end
